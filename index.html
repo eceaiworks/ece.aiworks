@@ -255,6 +255,25 @@
     padding: 13px 15px; border-radius: 10px; font-size: 0.82rem; color: var(--text); margin-top: 16px;
   }
 
+  .char-block { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 4px; }
+  .char-block > label { font-size: 0.86rem; color: var(--text-muted); }
+  .upload-zone {
+    margin-top: 8px; border: 1.5px dashed var(--purple); border-radius: 12px;
+    padding: 22px 16px; text-align: center; transition: background 0.15s, border-color 0.15s;
+  }
+  .upload-zone.dragover { background: color-mix(in srgb, var(--purple) 10%, var(--panel)); border-color: var(--pink); }
+  .upload-btn {
+    display: inline-block; background: color-mix(in srgb, var(--purple) 14%, var(--panel));
+    color: var(--purple); padding: 8px 16px; border-radius: 8px; font-size: 0.88rem; font-weight: 600; cursor: pointer;
+  }
+  .upload-hint { margin-top: 8px; font-size: 0.8rem; color: var(--text-muted); }
+  .upload-filename { margin-top: 6px; font-size: 0.82rem; color: var(--text); word-break: break-all; }
+  .checkbox-line {
+    display: flex; align-items: center; gap: 10px; font-size: 0.92rem; color: var(--text);
+    cursor: pointer; margin-top: 4px;
+  }
+  .checkbox-line input { width: auto; accent-color: var(--purple); }
+
   footer { padding: 26px 0; border-top: 1px solid var(--line); }
   footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.84rem; color: var(--text-muted); }
 </style>
@@ -271,18 +290,18 @@
       <a href="#fiyat">Fiyatlar</a>
       <a href="#iletisim">İletişim</a>
     </div>
-    <a class="navcta" href="#iletisim">Hikayeni anlat</a>
+    <a class="navcta" href="#iletisim">Hikayenizi anlatın</a>
   </nav>
 </header>
 
 <section class="wrap hero">
   <div>
     <div class="eyebrow"><span class="dot-ic"></span> AI destekli kişisel animasyon stüdyosu</div>
-    <h1>Anını <span class="grad-text">bir portala</span> bırak, sahne olarak çık.</h1>
-    <p class="lead">Evlilik teklifini, tanışma hikayenizi ya da bebek haberini kişiye özel bir 3D animasyona dönüştürüyorum — Instagram'da 34.000 kişinin izlediği bir anlatım diliyle.</p>
+    <h1>Bize bir anı bırakın, <span class="grad-text">sahneye biz</span> dönüştürelim.</h1>
+    <p class="lead">Evlilik teklifinizi, tanışma hikayenizi ya da bebek haberinizi kişiye özel bir 3D animasyona dönüştürüyorum — Instagram'da 40.000 kişinin izlediği bir anlatım diliyle.</p>
     <div class="hero-ctas">
-      <a class="btn-primary" href="#iletisim">Hikayeni anlat</a>
-      <a class="btn-secondary" href="#hizmetler">Hizmetleri gör</a>
+      <a class="btn-primary" href="#iletisim">Hikayenizi anlatın</a>
+      <a class="btn-secondary" href="#hizmetler">Hizmetlere göz atın</a>
     </div>
   </div>
   <div>
@@ -303,7 +322,7 @@
 
 <div class="proof">
   <div class="wrap">
-    <div class="proof-stat"><span class="dot-ic"></span> Instagram'da <span class="grad-text">34.000</span> takipçi</div>
+    <div class="proof-stat"><span class="dot-ic"></span> Instagram'da <span class="grad-text">40.000</span> takipçi</div>
     <div class="proof-note">@ece.aiworks — animasyonlarla anlatılan gerçek hikayeler</div>
   </div>
 </div>
@@ -311,8 +330,8 @@
 <section class="block" id="hakkimda">
   <div class="wrap" style="max-width: 760px;">
     <p style="font-size:1.35rem; line-height:1.55;">3D animasyonla kişiye özel sahneler üretiyorum: <span class="grad-text">evlilik teklifleri</span>, <span class="grad-text">bebek haberleri</span> ve <span class="grad-text">tanışma hikayeleri</span>.</p>
-    <p style="margin-top:18px; color:var(--text-muted); font-size:1.05rem;">Süreç şöyle işliyor: fotoğraflarını, mekanını ve hikayenin ayrıntılarını paylaşırsın; ben storyboard'unu kurgular, sahneleri 3D olarak canlandırır ve müzikle tamamlarım. Her proje, kısa bir sahneden (10–15 saniye) tam bir kısa filme (5+ sahne) kadar farklı kapsamlarda ilerleyebilir.</p>
-    <p style="margin-top:18px; color:var(--text-muted); font-size:1.05rem;">Instagram'da 34.000 kişinin takip ettiği bu çalışmaların hepsi aynı prensiple üretiliyor: gerçek bir anı, ona yakışan bir kurguyla anlatmak.</p>
+    <p style="margin-top:18px; color:var(--text-muted); font-size:1.05rem;">Süreç şöyle işliyor: fotoğraflarınızı, mekanınızı ve hikayenizin ayrıntılarını paylaşırsınız; storyboard'unuzu kurgular, sahneleri 3D olarak canlandırır ve müzikle tamamlarım. Her proje, kısa bir sahneden (10–15 saniye) tam bir kısa filme (5+ sahne) kadar farklı kapsamlarda ilerleyebilir.</p>
+    <p style="margin-top:18px; color:var(--text-muted); font-size:1.05rem;">Instagram'da 40.000 kişinin takip ettiği bu çalışmaların hepsi aynı prensiple üretiliyor: gerçek bir anı, ona yakışan bir kurguyla anlatmak.</p>
   </div>
 </section>
 
@@ -320,7 +339,7 @@
   <div class="wrap">
     <div class="block-head">
       <h2>Her hikaye kendi ışığını bulur</h2>
-      <p class="text-muted">Fotoğraf, mekan ve ayrıntıları sen paylaşırsın; sahne kurgusu ve animasyon benden.</p>
+      <p class="text-muted">Fotoğraf, mekan ve ayrıntıları siz paylaşırsınız; sahne kurgusu ve animasyon benden.</p>
     </div>
     <div class="services">
       <div class="svc-card c1">
@@ -361,13 +380,13 @@
   <div class="wrap">
     <div class="block-head">
       <h2>Nasıl çalışır</h2>
-      <p>Hikayeni paylaşmandan teslime kadar dört adım.</p>
+      <p>Hikayenizi paylaşmanızdan teslime kadar dört adım.</p>
     </div>
     <div class="orbit-wrap">
       <div class="orbit">
         <div class="o-step s1">
           <div class="num grad-text">Adım 01</div>
-          <h3>Hikayeni paylaş</h3>
+          <h3>Hikayenizi paylaşın</h3>
           <p>Fotoğraf, tarih ve anının ayrıntıları</p>
         </div>
         <div class="o-step s2">
@@ -412,7 +431,7 @@
         <h3>Standart</h3>
         <div class="price">4.000 TL <small>/ video</small></div>
         <ul>
-          <li>3–4 sahnelik kurgu</li>
+          <li>3–4 sahnelik kurgu (30–60 sn)</li>
           <li>Müzik eşliği</li>
           <li>2 revizyon hakkı · 5 iş günü</li>
         </ul>
@@ -422,7 +441,7 @@
         <h3>Tam Hikaye</h3>
         <div class="price">6.000 TL <small>/ video</small></div>
         <ul>
-          <li>5+ sahnelik kısa film</li>
+          <li>5+ sahnelik kısa film (60–90+ sn)</li>
           <li>Özel müzik/seslendirme</li>
           <li>3 revizyon hakkı · öncelikli teslim</li>
         </ul>
@@ -436,11 +455,11 @@
   <div class="wrap">
     <div class="contact-grid">
       <div class="glass-form">
-        <h2 style="font-size:1.6rem;">Hikayeni anlat</h2>
-        <p style="color:var(--text-muted); margin-top:8px; position:relative; z-index:1;">Formu doldur, WhatsApp üzerinden ayrıntıları netleştirelim.</p>
+        <h2 style="font-size:1.6rem;">Hikayenizi anlatın</h2>
+        <p style="color:var(--text-muted); margin-top:8px; position:relative; z-index:1;">Formu doldurun, WhatsApp üzerinden ayrıntıları netleştirelim.</p>
         <form id="orderForm" onsubmit="return sendToWhatsapp(event)" style="margin-top:20px;">
           <div>
-            <label for="name">Adın</label>
+            <label for="name">Adınız</label>
             <input id="name" type="text" required>
           </div>
           <div>
@@ -451,17 +470,48 @@
               <option>Premium — Tam Hikaye</option>
             </select>
           </div>
+
+          <div class="char-block">
+            <label>Karakter 1 (Siz)</label>
+            <div class="upload-zone" data-target="char1file">
+              <input type="file" id="char1file" accept="image/*" hidden>
+              <label for="char1file" class="upload-btn">Dosya Yükleyiniz</label>
+              <p class="upload-hint">veya yüklemek için dosyayı bırakın</p>
+              <p class="upload-filename" id="char1filename"></p>
+            </div>
+            <input type="text" id="char1name" placeholder="Karakter 1'in adı" required style="margin-top:10px;">
+          </div>
+
+          <div class="char-block">
+            <label>Karakter 2</label>
+            <div class="upload-zone" data-target="char2file">
+              <input type="file" id="char2file" accept="image/*" hidden>
+              <label for="char2file" class="upload-btn">Dosya Yükleyiniz</label>
+              <p class="upload-hint">veya yüklemek için dosyayı bırakın</p>
+              <p class="upload-filename" id="char2filename"></p>
+            </div>
+            <input type="text" id="char2name" placeholder="Karakter 2'nin adı" required style="margin-top:10px;">
+          </div>
+
+          <label class="checkbox-line">
+            <input type="checkbox" id="extraCharToggle" onchange="toggleExtraChars()">
+            <span>Karakter eklemek istiyorum (+125 TL / kişi)</span>
+          </label>
+          <p class="field-note" style="margin-top:-10px;">En fazla 3 ekstra karakter fotoğrafı yükleyebilirsiniz.</p>
+
+          <div id="extraCharsWrap" style="display:none;"></div>
+
           <div>
-            <label for="story">Hikayen kısaca</label>
+            <label for="story">Hikayeniz kısaca</label>
             <textarea id="story" placeholder="Örn: 14 Şubat'ta sahilde teklif edeceğim, 2019'da bir kahve dükkanında tanıştık..." required></textarea>
           </div>
           <button class="btn-primary" type="submit">WhatsApp'tan gönder</button>
-          <p class="field-note">Fotoğraflarını mesaj sonrası WhatsApp veya Instagram DM üzerinden iletebilirsin.</p>
+          <p class="field-note">Fotoğraflar bu formdan gönderilmez — WhatsApp sohbeti açıldığında karakter fotoğraflarını oradan iletebilirsiniz.</p>
         </form>
       </div>
       <div class="contact-side">
-        <h3>Doğrudan ulaş</h3>
-        <p>Instagram'daki son çalışmalara göz atmak ya da doğrudan yazmak istersen:</p>
+        <h3>Doğrudan ulaşın</h3>
+        <p>Instagram'daki son çalışmalara göz atmak ya da doğrudan yazmak isterseniz:</p>
         <a class="ig-line" href="https://instagram.com/ece.aiworks" target="_blank" rel="noopener">Instagram'da gör — @ece.aiworks</a>
         <a class="ig-line" style="margin-top:12px;" href="https://api.whatsapp.com/send?phone=905515222345" target="_blank" rel="noopener">WhatsApp'tan doğrudan yaz</a>
       </div>
@@ -477,13 +527,89 @@
 </footer>
 
 <script>
+  let extraCharCount = 0;
+  const MAX_EXTRA = 3;
+
+  function toggleExtraChars() {
+    const on = document.getElementById('extraCharToggle').checked;
+    const wrap = document.getElementById('extraCharsWrap');
+    wrap.style.display = on ? 'block' : 'none';
+    if (on && extraCharCount === 0) addExtraChar();
+    if (!on) { wrap.innerHTML = ''; extraCharCount = 0; }
+  }
+
+  function addExtraChar() {
+    if (extraCharCount >= MAX_EXTRA) return;
+    extraCharCount++;
+    const n = extraCharCount + 2; // Karakter 3, 4, 5
+    const wrap = document.getElementById('extraCharsWrap');
+    const block = document.createElement('div');
+    block.className = 'char-block';
+    block.innerHTML = `
+      <label>Karakter ${n} (ekstra, +125 TL)</label>
+      <div class="upload-zone" data-target="char${n}file">
+        <input type="file" id="char${n}file" accept="image/*" hidden>
+        <label for="char${n}file" class="upload-btn">Dosya Yükleyiniz</label>
+        <p class="upload-hint">veya yüklemek için dosyayı bırakın</p>
+        <p class="upload-filename" id="char${n}filename"></p>
+      </div>
+      <input type="text" id="char${n}name" placeholder="Karakter ${n}'in adı" style="margin-top:10px;">
+    `;
+    wrap.appendChild(block);
+    wireUploadZone(block.querySelector('.upload-zone'));
+    if (extraCharCount < MAX_EXTRA) {
+      const more = document.createElement('button');
+      more.type = 'button';
+      more.textContent = '+ Bir karakter daha ekle';
+      more.className = 'btn-secondary';
+      more.style.marginTop = '4px';
+      more.onclick = () => { more.remove(); addExtraChar(); };
+      wrap.appendChild(more);
+    }
+  }
+
+  function wireUploadZone(zone) {
+    const fileInput = zone.querySelector('input[type="file"]');
+    const filenameEl = zone.querySelector('.upload-filename');
+    fileInput.addEventListener('change', () => {
+      filenameEl.textContent = fileInput.files[0] ? fileInput.files[0].name : '';
+    });
+    ['dragover', 'dragenter'].forEach(evt => zone.addEventListener(evt, (e) => {
+      e.preventDefault(); zone.classList.add('dragover');
+    }));
+    ['dragleave', 'drop'].forEach(evt => zone.addEventListener(evt, (e) => {
+      e.preventDefault(); zone.classList.remove('dragover');
+    }));
+    zone.addEventListener('drop', (e) => {
+      const file = e.dataTransfer.files[0];
+      if (file) {
+        try {
+          const dt = new DataTransfer();
+          dt.items.add(file);
+          fileInput.files = dt.files;
+        } catch (err) {}
+        filenameEl.textContent = file.name;
+      }
+    });
+  }
+
+  document.querySelectorAll('.upload-zone').forEach(wireUploadZone);
+
   function sendToWhatsapp(e) {
     e.preventDefault();
     const WHATSAPP_NUMBER = "905515222345";
     const name = document.getElementById('name').value.trim();
     const pkg = document.getElementById('package').value;
     const story = document.getElementById('story').value.trim();
-    const text = `Merhaba, ben ${name}. ${pkg} paketiyle ilgileniyorum. Hikayem: ${story}`;
+    const char1 = document.getElementById('char1name').value.trim();
+    const char2 = document.getElementById('char2name').value.trim();
+    let chars = `${char1} & ${char2}`;
+    for (let n = 3; n <= 2 + extraCharCount; n++) {
+      const el = document.getElementById(`char${n}name`);
+      if (el && el.value.trim()) chars += `, ${el.value.trim()}`;
+    }
+    const extraNote = extraCharCount > 0 ? ` (+${extraCharCount} ekstra karakter, +${extraCharCount * 125} TL)` : '';
+    const text = `Merhaba, ben ${name}. ${pkg} paketiyle ilgileniyorum. Karakterler: ${chars}${extraNote}. Hikayem: ${story} — Fotoğrafları bu sohbette ayrıca ileteceğim.`;
     const url = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(text)}`;
     window.location.href = url;
     return false;
